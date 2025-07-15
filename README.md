@@ -1,4 +1,8 @@
+<div align="center">
+
 **Anomaly Inpainting: Unsupervised Anomaly Detection with Diffusion Models and Any Anomalies**
+
+</div>
 
 <p align="center">
   <img src="generated.png" width="75%" alt="Teaser image for AnomalyAny">
