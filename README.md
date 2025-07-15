@@ -1,6 +1,7 @@
 <div align="center">
 
-**Anomaly Inpainting: Unsupervised Anomaly Detection with Diffusion Models and Any Anomalies**
+<h2><strong>Visual-based anomaly detection empowered by synthetic image generation</strong></h2>  
+<strong>Anomaly inpainting for overhead cranes</strong>
 
 </div>
 
@@ -24,11 +25,19 @@ mamba env create -f env.yml
 ```
 
 ## 🖼️ Anomaly Inference
-### 1. Train the Anomaly Inpainting Model
-Download the crane dataset from httsp:s1 \
-Update the path of the dataset \
-Run run.slurm 
+### 🔧 1. Train the Anomaly Inpainting Model
 
-### 2. Generate new anomalies
-Prepare the inference dataset including mask and original normal images \
-Run inference.slurm
+- Download the crane dataset from: `https://drive.google.com/drive/folders/1zdc6s5y1hFtb-2saGTQcxftciL39KDGs?usp=sharing` 
+- Update the dataset path in the configuration file 
+- Run the training script:
+
+  ```bash
+  sbatch run.slurm
+  
+### 🔧 2. Train the Anomaly Inpainting Model
+- Prepare the inference dataset, refer to the format of the dataset "inference", including: \
+Original normal images\
+Corresponding masks indicating anomaly regions
+
+ ```bash
+  sbatch inference.slurm
